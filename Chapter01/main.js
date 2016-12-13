@@ -1,4 +1,4 @@
-// sample01.js
+
 var HelloWorld = React.createClass({
   render: function() {
     return (
