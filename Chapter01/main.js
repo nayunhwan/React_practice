@@ -1,6 +1,7 @@
+// This is Chapter01 Example, It will help you to make React Class
 
-var HelloWorld = React.createClass({
-  render: function() {
+const HelloWorld = React.createClass({
+  render(){
     return (
       <h1>Hello, World!</h1>
     );
@@ -9,6 +10,6 @@ var HelloWorld = React.createClass({
 
 
 ReactDOM.render(
-  <HelloWorld date={new Date()} />,
+  <HelloWorld />,
   document.getElementById('example')
 );
