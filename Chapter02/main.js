@@ -1,3 +1,4 @@
+// It is Chapter02 Example, It explain about Nested(Container) Element
 
 const HelloWorld = React.createClass({
   render: function() {
