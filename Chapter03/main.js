@@ -1,12 +1,20 @@
-function tick(){
-  const element =(
-    <div>
-      <h1>Hello Tick Tak Tok</h1>
-      <h2>It is {new Date().toLocaleTimeString()}</h2>
-    </div>
-  )
+// It is Chapter03 Example, It will help you to make React Component
 
-  ReactDOM.render(element, document.getElementById("root"));
+class Element extends React.Component{
+
+  sayhey(){
+    alert('Hello!');
+  }
+
+  render(){
+
+    return(
+      <div>
+        <h1> Hello! {name}, Welcome to React</h1>
+        <button onClick={this.sayhey}>click me</button>
+      </div>
+    )
+  }
 }
 
-setInterval(tick, 1000);
+ReactDOM.render(<Element/>, document.getElementById("root"));
