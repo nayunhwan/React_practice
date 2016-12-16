@@ -1,4 +1,4 @@
-// This is Chapter04 Example, It explain to excute function per 1 sec
+// This is Chapter04 Example, It explains to excute function per 1 sec
 
 function tic(){
   const element =(
