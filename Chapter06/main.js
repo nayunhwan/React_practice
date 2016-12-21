@@ -2,13 +2,13 @@
  * Created by nayunhwan on 2016. 12. 21..
  */
 
-class DefaultComponent extends React.Component{
-    constructor(props){
+class DefaultComponent extends React.Component {
+    constructor(props) {
         super(props)
     }
 
-    render(){
-        return(
+    render() {
+        return (
             <h1>hello world</h1>
 
         )
