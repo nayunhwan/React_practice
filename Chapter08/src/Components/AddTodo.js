@@ -13,9 +13,7 @@ export default class AddTodo extends Component{
         node.value = '';
     }
 
-    AddTodo.propTypes ={
-        onAddClick: PropTypes.func.isRequired;
-    }
+
 
     render(){
         return(
@@ -27,4 +25,8 @@ export default class AddTodo extends Component{
             </div>
         )
     }
+}
+
+AddTodo.propTypes ={
+    onAddClick: PropTypes.func.isRequired
 }
