@@ -12,6 +12,7 @@ class ProductCategoryRow extends React.Component {
     }
 }
 
+
 class ProductRow extends React.Component {
     render() {
         var name = this.props.product.stocked ?
