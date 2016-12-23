@@ -2,7 +2,7 @@
  * Created by nayunhwan on 2016. 12. 22..
  */
 
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 
 export default class SearchBar extends Component{
     constructor(props){
@@ -33,4 +33,10 @@ export default class SearchBar extends Component{
             </form>
         )
     }
+}
+
+SearchBar.propType = {
+    onUserInput: PropTypes.func.isRequired,
+    filterTextInput: PropTypes.string.isRequired,
+    inStockOnly: PropTypes.bool.isRequired
 }

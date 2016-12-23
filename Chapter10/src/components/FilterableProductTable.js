@@ -24,12 +24,14 @@ export default class FilterableProductTable extends Component{
             inStockOnly: inStockOnly
         })
     }
+
     render(){
         return(
             <div>
                 <SearchBar
                     filterText={this.state.filterText}
                     inStockOnly={this.state.inStockOnly}
+                    onUserInput={this.handleUserInput}
                 />
                 <ProductTable
                     products={this.props.products}
