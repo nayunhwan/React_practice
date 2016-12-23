@@ -1,0 +1,21 @@
+{
+  "name": "chapter09",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "react-redux": "^5.0.1",
+    "react-scripts": "^0.8.4"
+  },
+  "devDependencies": {
+    "redux-devtools": "^3.3.1"
+  }
+}
