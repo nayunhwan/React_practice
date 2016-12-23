@@ -9,7 +9,7 @@ export default class TodoList extends React.Component{
     render(){
         return(
             <ul>
-                {this.props.todo.map((todo, index))}
+                {this.props.todos.map((todo, index))}
                 <Todo
                     {...Todo}
                     key={index}
@@ -19,6 +19,7 @@ export default class TodoList extends React.Component{
         )
     }
 }
+
 TodoList.propTypes = {
     onTodoClick: PropTypes.func.isRequired,
     todos: PropTypes.arrayOf(PropTypes.shape({

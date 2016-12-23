@@ -1,18 +1,35 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import AddTodo from './Components/AddTodo';
+import TodoList from './Components/TodoList';
+import Footer from './Components/Footer';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div>
+          <AddTodo onAddClick={(text) =>
+            console.log('Add Todo',text)
+          }/>
+          <TodoList onTodoClick={(todo) =>
+            console.log('Todo clicked', todo)
+          } todos={[
+              {
+                  text: 'Use Redux',
+                  completed: true
+              },
+              {
+                  text: 'Learn to connect it to React',
+                  completed: false
+              }
+
+
+
+          ]}/>
+          <Footer
+              filter='SHOW_ALL'
+              onFilterChange={filter =>
+                  console.log('filter change', filter)
+              } />
       </div>
     );
   }
