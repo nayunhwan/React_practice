@@ -3,28 +3,39 @@
  */
 
 import React, {Component} from 'react';
+import { connect } from 'react-redux';
 import store from '../store';
 
-export default class TodoList extends Component{
-    constructor(props){
-        super(props);
-        this.state = {
-            todos: []
-        }
-        this.check = this.check.bind(this);
-        store.subscribe(this.check);
-    }
-    check(){
-        this.setState({
-            todos: store.getState()
-        });
-    }
+class TodoList extends Component{
+    // constructor(props){
+    //     super(props);
+    //     this.state = {
+    //         todos: []
+    //     }
+    //     this.check = this.check.bind(this);
+    //     store.subscribe(this.check);
+    // }
+    // check(){
+    //     this.setState({
+    //         todos: store.getState()
+    //     });
+    // }
     render(){
-        console.log(this.state);
+        console.log(this.props);
         return(
             <ul>
-                { this.state.todos.map(todo => <li>{todo.text}</li>)}
+                { this.props.todos.map(todo => <li>{todo.text}</li>)}
             </ul>
         )
     }
 }
+
+const select = (state) => {
+    return{
+        todos: state
+    }
+}
+
+TodoList = connect(select)(TodoList)
+
+export default TodoList;
