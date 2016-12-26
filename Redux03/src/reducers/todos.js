@@ -37,4 +37,4 @@ function todos (state = [], action){
 }
 
 
-export default reducer
+export default todos
