@@ -11,6 +11,7 @@ const TODO_FILTERS = {
 class MainSection extends Component {
   constructor(props, context) {
     super(props, context);
+
     this.state = { filter: SHOW_ALL };
   }
 
